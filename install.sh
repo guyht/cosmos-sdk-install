@@ -3,18 +3,15 @@
 GO_VERSION=go1.12.5
 COSMOS_VERSION=v0.34.4
 
-echo ""
-echo "This script will install the latest version of GO, Gaiacli and Gaiad as well as any other required dependencies for linux 64 bit systems"
-echo ""
-echo "By default, gaiacli is not connected to any cosmos nodes, this script will aso configure gaiacli to connect to the MyCosmosValidator public nodes so it is fully ready to be used.  For more information visit https://mycosmosvalidator.com"
-echo ""
-echo "NOTE: If you have an older version of GO already installed, this script will update GO to the latest version and may also change your GO environment variables"
-echo ""
-echo "This script will install GO version $GO_VERSION and cosmos version $COSMOS_VERSION"
-
-read -p "Are you sure you want to continue? <y/N> " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
+run () {
+    echo ""
+    echo "This script will install the latest version of GO, Gaiacli and Gaiad as well as any other required dependencies for linux 64 bit systems"
+    echo ""
+    echo "By default, gaiacli is not connected to any cosmos nodes, this script will aso configure gaiacli to connect to the MyCosmosValidator public nodes so it is fully ready to be used.  For more information visit https://mycosmosvalidator.com"
+    echo ""
+    echo "NOTE: If you have an older version of GO already installed, this script will update GO to the latest version and may also change your GO environment variables"
+    echo ""
+    echo "This script will install GO version $GO_VERSION and cosmos version $COSMOS_VERSION"
 
     echo "Checking required packages are installed"
     apt install -y wget git make gcc curl
@@ -68,5 +65,6 @@ then
 
 
 
+}
 
-fi
+run
