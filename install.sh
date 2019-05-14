@@ -7,7 +7,7 @@ run () {
     echo ""
     echo "This script will install the latest version of GO, Gaiacli and Gaiad as well as any other required dependencies for linux 64 bit systems"
     echo ""
-    echo "By default, gaiacli is not connected to any cosmos nodes, this script will aso configure gaiacli to connect to the MyCosmosValidator public nodes so it is fully ready to be used.  For more information visit https://mycosmosvalidator.com"
+    echo "By default, gaiacli is not connected to any cosmos nodes, this script will aso configure gaiacli to connect to the MyCosmosValidator public nodes so it is fully ready to be used."
     echo ""
     echo "NOTE: If you have an older version of GO already installed, this script will update GO to the latest version and may also change your GO environment variables"
     echo ""
