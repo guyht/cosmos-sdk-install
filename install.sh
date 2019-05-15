@@ -14,11 +14,11 @@ run () {
     echo "This script will install GO version $GO_VERSION and cosmos version $COSMOS_VERSION"
 
     echo "Checking required packages are installed"
-    apt install -y wget git make gcc curl
+    sudo apt install -y wget git make gcc curl
 
     echo "Installing go"
     wget https://dl.google.com/go/$GO_VERSION.linux-amd64.tar.gz
-    tar -C /usr/local -xzf $GO_VERSION.linux-amd64.tar.gz
+    sudo tar -C /usr/local -xzf $GO_VERSION.linux-amd64.tar.gz
     rm $GO_VERSION.linux-amd64.tar.gz
 
     echo "Setting up environment variables for GO"
