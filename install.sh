@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GO_VERSION=go1.12.5
-COSMOS_VERSION=v0.34.4
+COSMOS_VERSION=v0.35.0
 
 run () {
     echo ""
